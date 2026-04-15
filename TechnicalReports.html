@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="nav-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="nav-style-publication.css">
+
+
+    <script>
+        // When the user scrolls down, show/hide the button with fade effect
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.className = "show";
+            } else {
+                backToTopBtn.className = "hide";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document with smooth effect
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+
+
+</head>
+
+<body style="font-family: Inter; font-weight: 500;">
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"> Top</button>
+
+    <!-- Responsive Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 82, 150);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">Sabya Mishra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav w-100 justify-content-between mb-2 mb-lg-0">
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="./Journals.html">Publications</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="students.html">Students</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Publications Sub-navigation -->
+    <nav class="navbar bg-light mt-2 mb-4 shadow-sm rounded">
+        <div class="container">
+            <ul class="nav nav-pills d-flex w-100">
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="./Journals.html">Journals</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="./ConferenceProceedings.html">Conference Proceedings</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link active" href="./TechnicalReports.html">Technical Reports</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-2 px-md-4 my-4">
+        <!-- ...existing content... -->
+        <section>
+
+            <div>
+                <style>
+                    .journal-list {
+                        counter-reset: journal-counter 39;
+                        /* Initialize the counter at 110 */
+                        list-style-type: none;
+                        padding-left: 0;
+                        margin-left: 0;
+                    }
+
+                    .journal-list>li {
+                        counter-increment: journal-counter -1;
+                        display: inline-flex;
+                        align-items: flex-start;
+                    }
+
+                    .journal-list>li::before {
+                        content: "TR" counter(journal-counter, decimal) ". ";
+                        margin-right: 10px;
+                        font-weight: bold;
+                        display: inline-block;
+                        align-self: flex-start;
+                    }
+
+                    .journal-list li p {
+                        margin-top: 0px;
+                    }
+                </style>
+
+
+                <h1 id=Publications_heading>Technical Reports</h3>
+                    </a>
+            </div>
+
+            <ol class="journal-list">
+
+                <li>
+                    <p>
+                        Identifying Cost-Effective, High-Return, and Quickly Implementable Improvements to Address
+                        Freight Congestion and Mobility Constraints in Tennessee, Tennessee Department of Transporation
+                        (2017). [
+                        <a href="PDFs/Reports/2018_TDOT_freightcongestion.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Improving resilience of freight networks in West Tennessee, Tennessee Department of
+                        Transporation (2017). [
+                        <a href="PDFs/Reports/2018_Network_Volunerability.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        I-40 in Tennessee: A corridor of national significance in moving freight and linking multistate
+                        communities, FHWA SHRP2 Implementation Assistance Program: Round 7 PlanWorks, FHWA and Tennessee
+                        Department of Transporation (2017). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">Forthcoming</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Work Zone Impact and Strategy Estimation (WISE) Software, SHRP II R5, Implementation Assistance
+                        Program, FHWA and Tennessee Department of Transporation (2017). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">Forthcoming</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Integrating Freight Considerations in Highway Capacity Planning Process, SHRP II R5,
+                        Implementation Assistance Program, FHWA and Tennessee Department of Transporation (2017). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">Forthcoming</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Latent Classes in Residence‐Workplace Location Choice and Travel Behavior Study, Tennessee
+                        Department of Transportation (2017). [
+                        <a href="PDFs/Reports/2017_Latent_Class_TDOT.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Work Zone Crash Performance Data Measurement, Tennessee Department of Transportation (2017). [
+                        <a href="PDFs/Reports/2017_WZ_TDOT.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Assessment of Mobility and Transit Access to Captive Riders in Suburban and Rural Areas,
+                        Tennessee Department of Transportation (2017). [
+                        <a href="PDFs/Reports/2017_TDOT_Mobility&Transit.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Tennessee Smart Park Pilot, Tennessee Department of Transportation (2017). [
+                        <a href="PDFs/Reports/2017_SmartPark_TDOT.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Activity Based Travel Demand Model for Maryland, Maryland State Highway Administration (2017). [
+                        <a href="PDFs/Reports/MSTM 2.0.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Development of a Tour Based and Supply Chain Statewide Multimodal Freight Model for Maryland,
+                        Maryland State Highway Administration (2017). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        An Alternative Biologistics for Pharmaceutical Products: 3D-Printed Tablets and Pills, FedEx
+                        Institute of Technology (2016). [
+                        <a href="PDFs/Reports/2016_Biologistics_3D_Printing.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Big Data Analytics Meets Internet of Things: Paradigm Shift in Bio-logistics, FedEx Institute of
+                        Technology (2016). [
+                        <a href="PDFs/Reports/2016_Biologistics_Packaging.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Addressing MAP-21 Freight Objectives using GPS Data, USDOT, CFIRE, and Tennessee Department of
+                        Transportation (2016). [
+                        <a href="PDFs/Reports/Final Report_CFIRE_MAP21.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Simulating FedEx Indianapolis Hub Secondary Sort-Phase II, Federal Express (FedEx) (2016). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Simulating FedEx Indianapolis Hub Secondary Sort-Phase I, Federal Express (FedEx) (2015). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Reshoring and its impact on transportation infrastructure and US economy, USDOT, CFIRE, and
+                        Tennessee Department of Transportation (2015). [
+                        <a href="PDFs/Reports/CFIRE_0916_FinalReport.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Incorporating peak spreading and reliability analysis into the Maryland Statewide Transportation
+                        Model, Maryland State Highway Administration (2015). [
+                        <a href="PDFs/Reports/PeakSpreading&Reliability.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A guidebook for best practices on integrated land use and travel demand modelling, USDOT, CFIRE,
+                        and Tennessee Department of Transportation (2015). [
+                        <a href="PDFs/Reports/2014_Land_use_TDOT.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A Data Driven Approach to State Transportation Investment Decisions: a Transportation Project
+                        Investment and Evaluation Resource (T-PIER), USDOT, Georgia Tech, and Georgia DOT, (2015). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A guidebook for freight transportation planning using truck GPS data, USDOT, CFIRE, and
+                        Tennessee Department of Transportation (2015). [
+                        <a href="PDFs/Reports/TDOT_FPM.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Effect of Primary and Secondary Crashes: Identification, Visualization and Prediction, USDOT,
+                        CFIRE, and Tennessee Department of Transportation (2015). [
+                        <a href="PDFs/Reports/2016_PS_Crash_TDOT.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Protecting and Preserving Our Driving, Biking and Walking Infrastructure: Building a
+                        Transportation Project Investment and Evaluation Resource (T-PIER), University of Memphis
+                        Research Foundation (2014). [
+                        <a href="PDFs/Reports/HERE.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A Framework for Travel Demand Model Related Household and Person Level Control, Baltimore
+                        Metropolitan Council (2013). [
+                        <a href="PDFs/Reports/2013_BMC_Report_0726.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Modeling Chesapeake Bay Megaregion, Federal Highway Administration (2013). [
+                        <a href="PDFs/Reports/2013_full_report_megaregion_ncsg_20130528.pdf" target="new">PDF</a>
+                        ] [Extension 1:
+                        <a href="PDFs/Reports/2014_FHWA_MegaRegion_Marketanalysis.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        Maryland Scenarios Project, for Maryland Department of Transportation (2012). [
+                        <a href="PDFs/Reports/2012_msp_final_20120823.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Maryland Statewide Transportation Model: Training Manual,
+                        <em> Maryland State Highway Administration</em>
+                        , Maryland Department of Transportation, Phase-III report, with National Center for Smart Growth
+                        and Parsons Brinkerhoff Staff (2012). [
+                        <a href="PDFs/Reports/MSTM Desktop Reference.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Maryland Statewide Transportation Model: Users Guide,
+                        <em> Maryland State Highway Administration</em>
+                        , Maryland Department of Transportation, Phase-III report, with National Center for Smart Growth
+                        and Parsons Brinkerhoff Staff (2011). [
+                        <a href="PDFs/Reports/MSTM_Documentation.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Maryland Statewide Transportation Model: Users Guide,
+                        <em>Maryland State Highway Administration</em>
+                        , Maryland Department of Transportation, Phase-II report (2010).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., Mishra, S., and Swain, S. (2010). Developing and Testing a Framework for
+                        Alternative Ownership, Tenure and Governance Strategies for the Proposed Detroit-Windsor River
+                        Crossing, Phase-II (Final) report to
+                        <em>University Transportation Center</em>
+                        , University of Toledo. [
+                        <a href="PDFs/Reports/2010_MIOH_UTC_DRIC_Phase II Report.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., and Mishra, S., and Swain, S. (2010). Congestion Relief by Travel Time
+                        Minimization in Near Real Time, Phase-III Report, with Grand Valley State University,
+                        <em>Michigan Department of Transportation</em>
+                        .
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., Dutta, U., Elibe, E., Mishra, S., and Swain, S. (2010). Modeling Metropolitan
+                        Detroit Transit, Michigan-Ohio
+                        <em>University Transportation Center</em>
+                        , and
+                        <em>Michigan Department of Transportation</em>
+                        . [
+                        <a href="PDFs/Reports/2010_MIOH_UTC_TS14_Final_Report_Modeling_Metropolitan_Detroit_Transit.pdf"
+                            target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., and Mishra, S (2009). Developing and Testing a Framework for Alternative
+                        Ownership, Tenure and Governance Strategies for the Proposed Detroit-Windsor River Crossing,
+                        Phase-I report to
+                        <em>University Transportation Center</em>
+                        , University of Toledo. [
+                        <a href="PDFs/Reports/2009_MIOH_UTC_DRIC_Phase I Report.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., and Mishra, S (2009). Congestion Relief by Travel Time Minimization in Near Real
+                        Time, Phase-II Report, with Grand Valley State University,
+                        <em>Michigan Department of Transportation</em>
+                        . [
+                        <a href="PDFs/Reports/2009_GVSU_8_18_Incident Mangement Report_merged.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., and Mishra, S. (2008). Congestion Relief by Travel Time Minimization in Near Real
+                        Time, Phase-I Report, with Grand Valley State University, Michigan Department of Transportation.
+                        [
+                        <a href="PDFs/Reports/2009_GVSU_8_18_Incident Mangement Report_merged.pdf" target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., Mishra, S., and Brinkman, A. (2007). Public-Private Ownership of Transportation
+                        Infrastructure in Large Multi-Jurisdictional Metropolitan Areas,
+                        <em>Wayne State University</em>
+                        Center for Legal Studies.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., Safi, C., and Mishra, S (2006). Safety Improvements for Urban Arterials, Final
+                        Report,
+                        <em>Michigan Department of Transportation</em>
+                        . [
+                        <a href="PDFs/Reports/2010_MDOT_Edit-Safety Improvements for Urban Arterials-Sept 2006.pdf"
+                            target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Khasnabis, S., Safi, C., and Mishra, S (2006). A Toolbox for Safety Improvements for Urban
+                        Arterials, Final Report,
+                        <em>Michigan Department of Transportation</em>
+                        .[
+                        <a href="PDFs/Reports/2010_MDOT_ToolBox for Safety Improvements for Urban Arterials.pdf"
+                            target="new">PDF</a>
+                        ]
+                    </p>
+                </li>
+
+            </ol>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f2f2f2 25%, #e0e0e0 70%);
+      overflow-x: hidden; 
+    }
+
+    /* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .image-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-background {
+    width: 45%; /* Adjust size for medium screens */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .image-container {
+    flex-direction: column; /* Stack items on small screens */
+  }
+
+  .product-background {
+    width: 90%; /* Make items take full width */
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust heading size for mobile */
+  }
+}
+
+
+    main {
+      background-color: #fff;
+      width: 75%;
+      margin: 0 auto; /* Center the main content horizontally */
+    margin-top: 40px;
+      padding: 10px;
+    }
+
+    main * {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    header h1 a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    header h1 a:hover {
+      text-decoration: underline;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom:  10px;
+      padding: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 10;
+      display: flex;
+      justify-content: left;
+  
+    }
+
+    nav ul li {
+      box-sizing: border-box;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 25px 50px 0px 80px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: darkorange;
+    }
+
+    nav ul li a.active {
+      color: darkorange;
+    }
+
+    main {
+      padding: 10px;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.5;
+    }
+
+    #contact-info {
+      display: flex;
+    }
+
+    .contact-left {
+      flex: 1;
+    }
+
+    .contact-right {
+      text-align: left;
+    }
+
+.nav-links li a {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    text-decoration: none;
+  padding-left: 0px;
+  }
+
+  .nav-links li a:hover {
+    color: orange;
+    font-weight: bold;
+  }
+@font-face {
+  font-family: 'Tisa';
+  src: url('Tisa Sans Pro light.ttf') format('truetype');
+  /* Add additional src lines for other font variations like bold, italic, etc. if available */
+}
+
+/* Example usage */
+body {
+  font-family: 'Tisa', sans-serif;
+}
+
+.orange-word {
+  
+    color: orange;
+    
+  
+  }
+a {
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    text-decoration: none;
+  margin-right: -17px;
+  margin-left: -17px;
+  }
+
+  a:hover {
+    color: orange;
+    font-weight: bold;
+  }
+nav ul li:first-child {
+    margin-top: 0px; /* Adjust the value to increase or decrease the space */
+  }
+nav a {
+    margin: 0;
+  }
+nav h1 a{
+    font-weight: bold;
+  }
+  
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .image-container a {
+    flex-basis: calc(33.33% - 10px); /* Adjust the width as per your needs */
+    margin-bottom: 10px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+    .image-container img:hover {
+      transform: scale(1.05); /* Slightly magnify the image on hover */
+    }
+
+    h2 {
+    font-size: 20px; /* Adjust the font size as per your needs */
+    text-decoration: underline;
+    margin-right: 170px;
+    
+  }
+
+  .heading-container {
+    display: flex;
+    
+    align-items: flex-start;
+    width: 100%;
+   
+  }

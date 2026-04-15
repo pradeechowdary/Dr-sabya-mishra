@@ -1,0 +1,139 @@
+/* =========================================================================
+   Global and Body Styling
+   ========================================================================= */
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* =========================================================================
+   Navigation Bar Styling (Remains the same)
+   ========================================================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+    font-size: 16px;
+    padding: 10px 15px !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: orange !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =========================================================================
+   Main Content and Heading Styling (Remains the same)
+   ========================================================================= */
+main {
+    background-color: #fff;
+    width: 95%;
+    max-width: 1100px;
+    margin: 70px auto 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: rgb(46, 82, 150);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 1.75rem;
+    border-bottom: 2px solid rgb(46, 82, 150);
+    padding-bottom: 5px;
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+/* =========================================================================
+   Student Profile Cards (Responsive with direct image styling)
+   ========================================================================= */
+.student-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.student-profile-container:last-child {
+    border-bottom: none;
+}
+
+
+
+.student-details {
+    text-align: center;
+}
+
+.student-details h4 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.student-details p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.student-details a.students {
+    color: rgb(46, 82, 150);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.student-details a.students:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+/* =========================================================================
+   Media Queries for Tablets and Desktops (Remains the same)
+   ========================================================================= */
+@media (min-width: 768px) {
+    .student-profile-container {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .pic {
+        flex-shrink: 0;
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .student-details {
+        text-align: left;
+    }
+}

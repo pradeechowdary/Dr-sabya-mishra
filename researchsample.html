@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Sabya Mishra</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main site styles -->
+  <link rel="stylesheet" href="nav-style.css" />
+  <link rel="stylesheet" href="nav-style-research.css" />
+  <link rel="stylesheet" href="research-style.css" />
+</head>
+
+<body style="font-family: 'Inter', sans-serif; font-weight: 500;">
+  <nav style="background-color: rgb(46, 82, 150);">
+    <ul>
+      <h1><a href="homepage.html">Sabya Mishra</a></h1>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="./Journals.html">Publications</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="students.html">Students</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-container">
+    <div class="heading-container">
+      <h4>P.I, or Co-P.I Research Projects</h4>
+      <input type="text" id="searchBar" placeholder="Search projects..." onkeyup="filterResearch()" />
+    </div>
+
+    <ul style="list-style-type: none; padding-left: 0;">
+      <div class="research-container">
+        <h4>
+          Rural Transit Solutions for Enhancing Access & Connectivity for the Blue Oval City Hub (REACH)
+          <span style="font-size: 14px;">
+            <a href="/Final_Website_version/PDFs/Projects_One Pager/BOC One pager.pdf" target="_blank">
+              <i class="fas fa-file-pdf"></i> Download PDF
+            </a>
+          </span>
+        </h4>
+        <img class="pic alignleft" src="images/research/NSF_logo.png" width="200" height="200" alt="NSF logo" />
+        <div class="research-information">
+          <p>
+            This Civic Innovation Challenge (CIVIC) Stage 1 project will perform research that attempts to address
+            transportation challenges faced by residents and workers in rural areas around industrial hubs. Rapid economic
+             growth in these areas demands efficient public transit systems that can serve a geographically dispersed workforce 
+             with strict arrival times. However, existing solutions often struggle with these unique requirements, 
+             leading to traffic congestion, pollution, and limited access to essential services for residents. 
+             This research project will develop and deploy a novel multi-modal transit system for Blue Oval City (BOC),
+              a new rural industrial hub in Stanton, Tennessee. 
+              The system will combine fixed-line buses with on-demand micro-transit services, addressing the challenges posed 
+              by the geographically dispersed workforce and strict arrival times. Further, the project will design equitable fare 
+              structures to ensure that the system is sustainable for all stakeholders. If successful, the research will benefit
+               communities around BOC by enhancing their access to employment opportunities, essential resources, and services,
+                ultimately improving quality of life and community resilience. Furthermore, developing efficient and reliable transit
+                 can promote the growth of businesses in the surrounding areas and offer more affordable living options. 
+                 The research findings and deliverables will be transferable to other rural industrial hubs across the nation,
+                  fostering economic development and improving public transportation infrastructure. 
+                  
+          </p>
+          
+          <div class="project-meta">
+            <p><i class="fas fa-external-link-alt"></i> <a href="https://www.ce.memphis.edu/boc/" target="_blank">Project Website</a></p>
+            <p><i class="fas fa-user"></i> PI: Dr. Mishra</p>
+            <p><i class="fas fa-calendar-alt"></i> 2024–2025</p>
+            <p><i class="fas fa-graduation-cap"></i> Sponsored by: National Science Foundation</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="research-container">
+        <h4>Center for Electrified and Automated Trucking (CEAT)</h4>
+        <img class="pic alignleft" src="images/research/NSF IUCRC.png" width="400" height="200" alt="CEAT logo" />
+        <div class="research-information">
+          <p>
+            CEAT explores electrification and automation in long-haul trucking and transit. Topics include hydrogen fuel cells, V2V communication,
+            platooning, workforce development, and real-world pilot testing. It aims to transform mobility and logistics with academic-industry collaboration.
+          </p>
+          <p>
+            <i class="fas fa-external-link-alt"></i>
+            <a href="https://www.ceat-iucrc.com" target="_blank">Project Website</a>
+          </p>
+          <p class="icon-line">
+            <i class="fas fa-user"></i> PI: Dr. Mishra &nbsp; | &nbsp;
+            <i class="fas fa-calendar-alt"></i> 2024–2029 &nbsp; | &nbsp;
+            <i class="fas fa-graduation-cap"></i> Sponsored by: National Science Foundation
+          </p>
+        </div>
+      </div>
+    </ul>
+  </main>
+
+  <script>
+    function filterResearch() {
+      const input = document.getElementById("searchBar").value.toLowerCase();
+      const containers = document.querySelectorAll(".research-container");
+
+      containers.forEach(container => {
+        const text = container.textContent.toLowerCase();
+        container.style.display = text.includes(input) ? "block" : "none";
+      });
+    }
+  </script>
+</body>
+
+</html>

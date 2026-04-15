@@ -1,0 +1,157 @@
+/* =========================================================================
+   Global & Basic Resets
+   ========================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Body Styling */
+body {
+    font-family: 'Inter', sans-serif; /* Using 'Inter' as specified in HTML */
+    background: linear-gradient(to bottom, #f2f2f2 25%, #e0e0e0 70%);
+    line-height: 1.6;
+    padding-top: 70px; /* Space for the fixed nav, adjusted for clarity */
+}
+
+/* =========================================================================
+   Navigation Bar
+   ========================================================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-size: 16px;
+    padding: 10px 15px !important; /* Bootstrap override */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: orange !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* =========================================================================
+   Main Content & Heading
+   ========================================================================= */
+main.container-fluid {
+    width: 95%; /* Adjust width for better spacing on all screens */
+    max-width: 1200px; /* Optional: Sets a max-width for very large screens */
+    margin: 20px auto; /* Better margin control */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(46, 82, 150);
+    margin: 20px 0 40px; /* Adds space above and below the heading */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* =========================================================================
+   Product Image Grid (Flexbox with Two-Column Max)
+   ========================================================================= */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to a new line */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 20px;
+    padding: 0;
+}
+
+.product-background {
+    /* Set a minimum width and allow it to take up a fraction of space */
+    flex: 0 1 450px; /* flex-grow: 0 (don't grow), flex-shrink: 1 (do shrink), flex-basis: 450px (ideal size) */
+    
+    height: 200px;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-background:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(46, 82, 150, 0.6); 
+    transition: background-color 0.3s ease;
+}
+
+.product-background:hover .overlay-text,
+.product-background:focus .overlay-text {
+    background-color: rgba(46, 82, 150, 0.9);
+}
+
+.overlay-text h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+/* =========================================================================
+   Specific Background Images (Ensure these paths are correct)
+   ========================================================================= */
+.p7 { background-image: url('./images_event/background.jpg'); }
+.p8 { background-image: url('assets/images/title-page-2-1014x689.png'); }
+.p9{ background-image: url('images/product/tnsafety.jpeg'); }
+.p10{ background-image: url('images/product/blueovalmap.png'); }
+.p11{ background-image: url('Move-Overlay-image.webp'); }
+.p12{ background-image: url('gallery 3.jpg'); }
+
+/* =========================================================================
+   Media Queries (Refined for a cleaner flow)
+   ========================================================================= */
+
+/* Tablets and larger screens (min-width: 768px) - Two items per row */
+@media (min-width: 768px) {
+    .product-background {
+        /* Set a fixed size for the cards on larger screens to prevent uneven distribution */
+        width: calc(50% - 10px); 
+        flex: none; /* Reset flex properties to use a fixed width */
+    }
+}
+
+
+/* Adjust heading size for larger screens */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}

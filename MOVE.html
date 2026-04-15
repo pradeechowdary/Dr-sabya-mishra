@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOVE: Electric Vehicle Certification</title>
+  <link rel="stylesheet" href="Evcourse.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="ctier-logo.png" alt="C-TIER Logo" class="logo" />
+      <img src="upskillmidsouth.png" alt="Upskill Mid-South Logo" class="logo" />
+    </div>
+    <h1>MOVE: Mobility and Operation of Vehicle Electrification</h1>
+    <p>Empowering the Future of Electric Mobility</p>
+    <button onclick="scrollToRegistration()">Apply Now</button>
+  </header>
+
+  <div class="hero">
+    <h2>EV Certification Program for Engineers, Planners & Managers</h2>
+  </div>
+
+  <section id="overview">
+    <h2>🔍 Program Overview</h2>
+    <p>The MOVE program is a comprehensive EV certification course designed to build your skills in electric mobility, infrastructure, sustainability, policy, and business strategies. It’s tailored for engineers, policymakers, entrepreneurs, and fleet managers who want to make an impact in the growing EV industry.</p>
+  </section>
+
+  <section id="curriculum">
+    <h2>📚 Program Curriculum</h2>
+    <ul>
+      <li><strong>Module-1</strong> Electric Vehicle Systems and Future of Mobility</li>
+      <li><strong>Module-2</strong> Powering Electric Vehicles: Infrastructure & Energy</li>
+      <li><strong>Module-3</strong> Sustainable Urban Mobility & Policy Planning</li>
+      <li><strong>Module-4</strong> Economics & Strategy for EV Adoption</li>
+    </ul>
+  </section>
+
+  <section id="benefits">
+    <h2>🌟 Why Choose This Program?</h2>
+    <ul>
+      <li>Learn from top EV industry experts</li>
+      <li>Hands-on training with real-world case studies</li>
+      <li>Earn a professional certificate upon completion</li>
+      <li>Boost your career in the rapidly growing EV ecosystem</li>
+      <li>Lifetime access to course materials and resources</li>
+    </ul>
+  </section>
+
+  <section id="evaluation">
+    <h2>📈 Evaluation & Certification</h2>
+    <p>Participants will be evaluated through quizzes, assignments, and a final project. A certificate of completion will be awarded to all participants scoring above 60%.</p>
+  </section>
+
+  <section id="register" class="register">
+    <h2>📝 Registration via Upskill Mid-South</h2>
+    <p><strong>Eligibility:</strong> Unemployed, underemployed, or incumbent workers living or working in the Mid-South region.</p>
+    <p><strong>Requirement:</strong> Only a State Issued Photo ID is needed.</p>
+
+    <div class="highlight-box">
+      <h3>📋 Steps to Register:</h3>
+      <ul>
+        <li>
+          <span class="highlight-label">Training Provider:</span>
+          <span class="highlight-value">C-TIER Center at University of Memphis</span>
+        </li>
+        <li>
+          <span class="highlight-label">Training Course:</span>
+          <span class="highlight-value">Mobility and Optimization of Vehicle Electrification</span>
+        </li>
+        <li>Complete the short form (~10 mins)</li>
+      </ul>
+    </div>
+
+    <div class="qr-section">
+      <p>📲 Scan the QR code or click on Start Registration to register:</p>
+      <img src="registration-qr.png" alt="Registration QR Code" class="qr-image" />
+    </div>
+
+    <button onclick="window.open('https://memphis.co1.qualtrics.com/jfe/form/SV_3OQPb7vOoFY2eQ6', '_blank')">Start Registration</button>
+  </section>
+
+  <footer>
+    <p>📧 Contact us: <a href="mailto:smishra3@memphis.edu">smishra3@memphis.edu</a></p>
+    <p>&copy; 2025 MOVE EV Program. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToRegistration() {
+      document.getElementById('register').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>

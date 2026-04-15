@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="nav-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="nav-style-publication.css">
+
+
+    <script>
+        // When the user scrolls down, show/hide the button with fade effect
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            var backToTopBtn = document.getElementById("backToTopBtn");
+
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.className = "show";
+            } else {
+                backToTopBtn.className = "hide";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document with smooth effect
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
+
+
+</head>
+
+<body style="font-family: Inter; font-weight: 500;">
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"> Top</button>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(46, 82, 150);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">Sabya Mishra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav w-100 justify-content-between mb-2 mb-lg-0">
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link active" href="./Journals.html">Publications</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="teaching.html">Teaching</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item flex-fill text-center"><a class="nav-link" href="students.html">Students</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Publications Sub-navigation -->
+    <nav class="navbar bg-light mt-2 mb-4 shadow-sm rounded">
+        <div class="container">
+            <ul class="nav nav-pills d-flex w-100">
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="./Journals.html">Journals</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link active" href="./ConferenceProceedings.html">Conference Proceedings</a>
+                </li>
+                <li class="nav-item flex-fill text-center">
+                    <a class="nav-link" href="./TechnicalReports.html">Technical Reports</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-2 px-md-4 my-4">
+        <br><br>
+
+        <section>
+
+            <div>
+                <div>
+                    <style>
+                        .journal-list {
+                            counter-reset: journal-counter 139;
+                            /* Initialize the counter at 110 */
+                            list-style-type: none;
+                            padding-left: 0;
+                            margin-left: 0;
+                        }
+
+                        .journal-list>li {
+                            counter-increment: journal-counter -1;
+                            display: inline-flex;
+                            align-items: flex-start;
+                        }
+
+                        .journal-list>li::before {
+                            content: "C" counter(journal-counter, decimal) ". ";
+                            font-weight: bold;
+                            display: inline-block;
+                            align-self: flex-start;
+                        }
+
+                        .journal-list li p {
+                            margin-top: 0px;
+                        }
+                    </style>
+
+                    <h1 id=Publications_heading>Conference Proceedings</h3>
+
+                </div>
+
+                <ol reversed class="journal-list">
+                    <li>
+                        <p>Agrawal, A., Mishra, S., Lancaster, J. (2025).
+                        Trip Purpose and Demand Dynamics of On-Demand Transit: A Case Study of Memphis, Tennessee</p>
+                    </li>
+                    <li>
+                        <p>Aravind, A., Mishra, S., McClanahan, M. (2025).
+                        Driving Behavior Change: The Role of Positive Messaging in Reducing Roadside Litter</p>
+                    </li>
+                    <li>
+                        <p>Kar, P., Raavi, J., Mishra, S., Dey, K., Golias, M., Hunt, M. (2025).
+                        Hybrid Optimization of Wiedemann 99 Car-Following Parameters for Accurate Calibration of Microsimulation Model for Tennessee's Peak-Hour Freeway Traffic</p>
+                    </li>
+                    <li>
+                        <p>Mishra, S., Schweyer, L. (2025).
+                        Novel Transportation Demand Management Strategies</p>
+                    </li>
+                    <li>
+                        <p>Neupane, P., Mishra, S., Quicksall, J. (2025).
+                        Effect of Speed Feedback Mechanism on Speed and Headway Distributions in Long Work Zones</p>
+                    </li>
+                    <li>
+                        <p>Adeel, M., Khattak, A., Mishra, S., Thapa, D. (2025).
+                        To Balance or Not to Balance? Applying a Machine Learning Technique to Oversample Severe Injury Crashes in Work Zones</p>
+                    </li>
+                    <li>
+                        <p>Khan, I., Ashraf, M., Dey, K., Kar, P., Mishra, S., Hunt, M., Golias, L. (2025).
+                        Application of Machine Learning-based Sampling Method in Extreme Value Theory for Crash Risk Estimation of a Freeway Segment</p>
+                    </li>
+                    <li>
+                        <p>Mishra, S. (2025).
+                        Transportation Demand Management and Mobility Innovations</p>
+                    </li>
+                    <li>
+                        <p>Kar, P., Chunchu, M., Mishra, S. (2025).
+                        Effect of Rider Kinematics and Expected Speed Differences on the Sideswipe Crash Risk of Powered Two-Wheelers: A Copula-Based Proactive Safety Approach</p>
+                    </li>
+                    <li>
+                        <p>Agrawal, A., Sharma, I., Mishra, S., Antipova, A., Rogers III, W. (2025).
+                        Exploratory Analysis of Factors Influencing Induced Travel</p>
+                    </li>
+                    <li>
+                        <p>Thapa, D., Adil S. M., Mishra. S., Tian, R., Chiel, S., Chen, Y., Sherony, R. (2024).
+                        E-scooter Crash Data Analysis towards E-scooter Automatic Emergency Braking System Design and Validation for Automated Vehicles. Proceedings 2024 IEEE Intelligent Vehicles Symposium (IV), Jeju Island, Korea, Republic of, 2024, pp. 1323-1328, doi: 10.1109/IV55156.2024.10588769</p>
+                    </li>
+                    <li>
+                        <p>Samani, A., Mishra, S., Talebian, A., and Golias, M. (2024). Evaluating Consumers’ Shopping and Delivery Prefinances by Developing a Disaggregated E-Commerce Demand Model Using Extended Multiple Discrete Continues Extreme Values Framework. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Samani, A., Mishra, S., Talebian, A., and Golias, M. (2024). Comparing the Competitiveness of Different Last-mile Delivery Methods for Different Commodity Types. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Dehghan, S., Talebian, A., and Mishra, S. (2024). Optimal Infrastructure Investment Planning for Autonomous Road Vehicles. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Dhulipala, S., and Mishra, S. (2024). Spatiotemporal Distribution Patterns of Logistics Facilities in Medium-Sized Metropolitan Areas. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Aravind, A., Mishra, S., and Meservy, M. (2024). Nudging Towards Sustainable Urban Mobility: Exploring Behavioral Interventions for Promoting Public Transit Usage. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Bronson, M., Figliozzi, M., Samani, A., and Mishra, S. (2024). Exploratory Analysis of Factors Affecting Home Delivery Returns. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Aravind, A., Venthuthirithil, S., and Mishra, S. (2024). Optimized, Cooperative Routing Strategy for Autonomous Last-Mile Delivery Robots and Delivery Trucks. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Dhulipala, S., and Mishra, S. (2024). Logistics Sprawl and Exploration of its Influencing Factors: A Spatiotemporal Perspective. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+                    <li>
+                        <p>Samani, A., and Mishra, S. (2024). How Long the Effect of Take-over Conditions Lasts? A Duration Analysis of Commercial Motor Vehicle Drivers' Reaction Time and Driving Behavior in Highly Automated Vehicles. Presentation at 103rd Annual Board Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p>Sharma, I., Bernadin, V., and Mishra, S. (2023). Choice Behavior among Kahneman's Fast and
+                            Slow Thinkers: A Case of Autonomous Vehicles. Presentation at 102nd Annual Board Meeting of
+                            Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Samani, A., Riahisamani, R., Mishra, S., Golias, M., and Lee, D. (2023). Evaluating
+                            Relocation Behavior of Establishments: Evidence for the Short-term Effects of COVID-19.
+                            Presentation at 102nd Annual Board Meeting of Transportation Research Board, National
+                            Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Sharma, I., Gupta, M., Mishra, S., and Velaga, N. (2023). Exploring the Impact of Time
+                            Pressure on Motorized Two-Wheeler Riders' Over-speeding Behavior. Presentation at 102nd
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Samani, A., Mishra, S., Golias, M., and Lee, D. (2023). What Influences the Location Choice
+                            of Establishments? An Analysis Considering Establishment Types and Activities Interactions.
+                            Presentation at 102nd Annual Board Meeting of Transportation Research Board, National
+                            Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Rahman, M.D., Dey, K., and Mishra, S. (2023). Identification of High-Risk Roadway Segments
+                            for Wrong-Way Driving Crash Using Rare Event Modeling and Data Augmentation Techniques.
+                            Presentation at 102nd Annual Board Meeting of Transportation Research Board, National
+                            Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Aravind, A., Venthuruthiyil, S., Mishra, S. (2023). Evaluating Equity and Accessibility of
+                            On-Demand Mobility Integration with Fixed Route Transit. Presentation at 102nd Annual Board
+                            Meeting of Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Aravind, A., Venthuruthiyil, S., Mishra, S. (2023). Integration of On-Demand Mobility with
+                            Fixed Route Transit: A Cost Analysis. Presentation at 102nd Annual Board Meeting of
+                            Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Pani, A., Yadav, A., Mishra, S., Velaga, N. (2023). Analyzing the Willingness to Pay for
+                            Self-service Delivery Lockers as a Substitute for Home Delivery. Presentation at 102nd
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Sharma, G., Patil, G., and Mishra, S. (2023). Measuring Micro, Meso and Macro Level Walking
+                            Accessibility and Equity Analysis for Schools in Greater Mumbai. Presentation at 102nd
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Sharma, I., and Mishra, S. (2022). Quantifying the Consumers Dependence on Different
+                            Information Sources on Acceptance of Autonomous Vehicles. Presentation at 101st Annual Board
+                            Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p>Samani, A., and Mishra, S. (2022). Assessing Commercial Motor Vehicle Drivers Driving Styles
+                            after Transition from Automated to Manual Driving in Highly Automated Vehicles. Presentation
+                            at 101st Annual Board Meeting of Transportation Research Board, National Research Council,
+                            Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p>Ngo, H., and Mishra, S. (2022). Optimal Dispatching and Repositioning Strategy for Autonomous
+                            Taxi Using Reinforcement Learning. Presentation at 101st Annual Board Meeting of
+                            Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Thapa, D., Paleti, R., and Mishra, S. (2022). Predicting Future Crashes Using a Discretized
+                            Duration Modeling Approach. Presentation at 101st Annual Board Meeting of Transportation
+                            Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Takhtfiroozeh, H., Machado, A., Golias, M., Hourdos, J., Kaisar, E., and Mishra, S. (2022).
+                            Identifying Critical and Vulnerable Freight Routes in the State of Florida. Presentation at
+                            101st Annual Board Meeting of Transportation Research Board, National Research Council,
+                            Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Liatsos, V., Giampouranis, D., Golias, M., Hourdos, J., and Mishra, S. (2022). Optimizing and
+                            Quantifying Benefits from Truck Caravanning. Presentation at 101st Annual Board Meeting of
+                            Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p>Thapa, D., Mishra, S., Dey, K., Golias, M., and Md. T. (2022). Recreational Travels During
+                            the COVID-19 Pandemic: An Analysis of Antecedents and Necessary Conditions. Presentation at
+                            101st Annual Board Meeting of Transportation Research Board, National Research Council,
+                            Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Dey, K, Mishra, S., Integrating Tourism Travel with Transportation Planning and Project
+                            Development Process: A survey of State DOTs and Tourism Departments. Presentation at 101st
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Shahpasand, R., Talebian, A., and Mishra, S. (2022). Investigating the Impacts of 3D
+                            Printing Technology on Efficiency of Supply Chain: The Case of Tire Production. Presentation
+                            at 101st Annual Board Meeting of Transportation Research Board, National Research Council,
+                            Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Sharma, I., Pani, A., and Mishra, S. (2022). Mobility Inequalities in Food Desert
+                            Communities and the Acceptance for Autonomous Delivery: What Does Automation Mean for the
+                            Marginalized? Presentation at 101st Annual Board Meeting of Transportation Research Board,
+                            National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Figliozzi, M., Mishra, S., and Kaisar, E. (2022). A Study of Factors Affecting Commercial
+                            Vehicles Permits, Loading Zones, and Double-Parking Fines. Presentation at 101st Annual
+                            Board Meeting of Transportation Research Board, National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>Sharma, I., Mishra, S., and Golias, M. (2021). Quantifying the Adoption of Highly Automated
+                            Technologies by Rural Population: A Case Study of Tennessee. Presentation at 100th Annual
+                            Board Meeting of Transportation Research Board, National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p> Thapa, D., Garbhel, V., and Mishra, S. (2021). Investigating User Intentions of AV Use While
+                            Impaired. Presentation at 100th Annual Board Meeting of Transportation Research Board,
+                            National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Liatsos, V., Giampouranis, D., Golias, M., Mishra, S., Nalim, R., Frohlich, M., and Nicolas,
+                            C. (2021). Evaluating Cost Savings of Truck Caravanning. Presentation at 100th Annual Board
+                            Meeting of Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Samani, A., Mishra, S., Lee., D., Golias, M., and Everette, J. (2021). A New Approach to
+                            Develop Large Scale Land Use Models Using Open Source Data. Presentation at 100th Annual
+                            Board Meeting of Transportation Research Board, National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p> Ashraf, M. T, Dey, K., and Mishra, S. (2021). Extracting Rules from AV involved Crashes by
+                            applying Decision Tree and Association Rule Methods. Presentation at 100th Annual Board
+                            Meeting of Transportation Research Board, National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Pujats, K., Golias, M., and Mishra, S. (2021). Methods and Tools for Freight Flow
+                            Disaggregation. Presentation at 100th Annual Board Meeting of Transportation Research Board,
+                            National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Pani, A., Mishra, S., Golias, M., and Figliozzi, M. (2021). Valuing Public Acceptance of
+                            Autonomous Delivery Robots During COVID-19 Pandemic: Consumer Heterogeneity in Attitudes,
+                            Trust and Willingness to Pay. Presentation at 100th Annual Board Meeting of Transportation
+                            Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Takhtfiroozeh, H., Golias, M., and Mishra, S. (2021). Topological-Based Measures with Flow
+                            Attributes to Identify Critical Links in a Transportation Network. Presentation at 100th
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Sharma, I., Mishra, S., and Golias, M. (2021). Quantifying the Adoption of Highly Automated
+                            Technologies by Rural Population: A Case Study of Tennessee. Presentation at 100th Annual
+                            Board Meeting of Transportation Research Board, National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p> Sharma, I., and Mishra, S. (2020). Measuring Consumers’ Willingness to Pay Towards Adoption
+                            of Connected and Autonomous Vehicles Based on their Social Network. Presentation at 99th
+                            Annual Board Meeting of Transportation Research Board, National Research Council, Washington
+                            D.C. </p>
+                    </li>
+
+                    <li>
+                        <p>Thapa, D., Gabrhel, V., Miahs, S., Osman, M., Golias, M., Havlíčková, D., and Zámečník, P.
+                            (2020). User Willingness to Delegate Conventional Driving to Autonomous Driving System Under
+                            Different Contexts. Presentation at 99th Annual Board Meeting of Transportation Research
+                            Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Sharma, I., Mishra, S., and Golias, M. (2020). Prioritization of Autonomous Public Transit
+                            Buses on Urban Roads. Presentation at 99th Annual Board Meeting of Transportation Research
+                            Board, National Research Council, Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p> Osman, M., Paleti, R., and Mishra, S. (2020). A Ranked Ordered Logit Model to Analyze
+                            Relative Crash Risk by Number of Vehicles Involved. Presentation at 99th Annual Board
+                            Meeting of Transportation Research Board, National Research Council, Washington D.C. </p>
+                    </li>
+
+                    <li>
+                        <p> Simpson, J., and Mishra, S. (2020). Developing a Methodology to Predict the Adoption Rate of
+                            Connected Autonomous Trucks in Transportation Organizations Using Peer Effects. Presentation
+                            at 99th Annual Board Meeting of Transportation Research Board, National Research Council,
+                            Washington D.C.</p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Talebian, A., Mishra, S., Golias, M., Khan, J., Santo, C., Wang, L, Jacobs, E.,
+                            Astorne-Figari, C., and Simpson, J*. (2019). A holistic index for readiness to accommodate
+                            connected autonomous vehicles. Compendium of Papers in 98th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Mishra, S., Ngo, H*., and Kumar, A. (2019). Dynamic Wireless Charging Infrastructure
+                            Planning for Electric Vehicles. Compendium of Papers in 98th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Simpson, J*., and Mishra, S. (2019). The adoption of connected autonomous vehicles and other
+                            innovations by freight transportation organizations. Compendium of Papers in 98th Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Simpson, J*., Mishra, S., Talebian, A., and Golias, M. (2019). Disaggregated prediction of
+                            adoption rate of autonomous trucks by freight organizations. Compendium of Papers in 98th
+                            Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Haque, K*., Mishra, S., and Golias, M. (2019). Multi-Period Transportation Network
+                            Investment Decision Making and Policy Implications Using Econometric Framework. Compendium
+                            of Papers in 98th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Bhattarai, S*., Golias, M., Mishra, S, and Talebian, A. (2019). Multidimensional resource
+                            allocation for freight transportation planning. Compendium of Papers in 98th Annual Board
+                            Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Zhang, L., Ghader, S., Yang D., Rossi, T., Lu, F., Mishra, S., Radovic, M., Avner, J., and
+                            Mahapatra, S. (2019). Integrating micro-simulation models of short-distance and
+                            long-distance trips for statewide applications. Compendium of Papers in 98th Annual Board
+                            Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Talebian, A., and Mishra, S. (2018). Predicting the Demand for Connected Autonomous
+                            Vehicles: A new Approach Based on the Theory of Diffusion of Innovation. Presentation at
+                            Automated Vehicles Symposium, and
+                            <em>Transportation Research Board</em>
+                            , National Research Council, San Francisco, CA.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Jordan, S*., Talebian, A., Mishra, S and Gkolias, M. (2018). A Multiresolution Index for
+                            Intermodal Freight Connectivity. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Osman, A*., Mishra, S and Paleti, R. (2018). Injury Severity Analysis of Commercially
+                            Licensed Drivers in Single-Vehicle Crashes: Accounting for Unobserved Heterogeneity and Age
+                            Group Differences. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Welch, T., Kumar. A., and Widita. A, and Mishra, S. (2018). Constructing a Nationally
+                            Comparable Measure of Transit Performance Using GTFS Data. Compendium of Papers in 97th
+                            Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Welch, T., Mishra, S.,> Kumar. A., and Widita. A. (2018). Public Transit Resilience to
+                            Service Disruptions. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Ngo, H*., Shah. R., and Mishra, S., (2018). Multicriteria Mixed Transit Fleet Resource
+                            Allocation . Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Osman, M*., Mishra, S., Paleti, R. (2018). Impacts of Work Zone Configurations on
+                            Passenger-Car Crash Injury Severities. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Jordan, S*., Mishra, S., Gkolias, M., Welch, T., Cherry, C. (2018). Equity of Transit
+                            Connectivity in Tennessee Cities. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Pujats, K*., Gkolias, M., and Mishra, S (2018). Marine Container Terminal Cooperation: A
+                            Nash Bargaining Approach. Compendium of Papers in 97th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Paleti, R., Mishra, S., Haque, K*., Sarker, A*., Golias, M., and Chen, C. C. (2017). Latent
+                            class analysis of residential and work location choices. Compendium of Papers in 96th Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Osman, M., Mishra, S., Paleti, R., and Golias, M. (2017). Analysis of Driver Injury Severity
+                            for Different Work Zone Areas. Compendium of Papers in 96th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Ma, T., Haque K., Mishra, S., Golias, M., and Freeze, P. (2017). Nonlinear Multivariate
+                            Crash Prediction Model for Work Zones. Compendium of Papers in 96th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Higgs, B., Golias, M., and Mishra, S. (2017). Multi-Level Multi-Objective Vulnerability
+                            Assessment of Transportation Networks. Compendium of Papers in 96th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Dulebenets, M., Pujats, K., Deligiannis, N., Golias, M., and Mishra, S. (2017). Development
+                            of Tools for Processing Truck GPS Data and Analysis of Freight Transportation Facilities.
+                            Compendium of Papers in 96th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Kumar, A., Haque, K*., Mishra, S., Golias, M., and Welch, T. (2017). A Multi-Criteria Based
+                            Approach to Identify Critical Links in a Transportation Network. Compendium of Papers in
+                            96th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p> Kumar, A., and Mishra, S (2016). Effect of Market Penetration of Autonomous Vehicles on the
+                            Performance of Road Network with Mixed Traffic of Human Driven and Autonomous Vehicles.
+                            Presentation at 12th Transportation Planning and Implementation Methodologies for Developing
+                            Countries, IIT Bombay, December 2016. </p>
+                    </li>
+
+                    <li>
+                        <p> Kumar, A., Haque, K., Mishra, S., Golias, M., and Welch, T. (2016). A Multi-criteria Based
+                            Approach to Identify Critical Links in a Transportation Network. Presentation at 12th
+                            Transportation Planning and Implementation Methodologies for Developing Countries, IIT
+                            Bombay, December 2016. </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Mishra, S. (2016). Consideration of Conflicting Objectives in Highway Safety Resource
+                            Allocation. Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2016_Safety_Sequencing.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Tang, L., Ghader, S., S., Mahapatra, S., and Zhang, L. (2016). A Travel Time
+                            Reliability Estimation and Valuation Approach for Transportation Planning Applications.
+                            Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Sarker, A*., Paleti, R., Mishra, S., and Gkolias, M. (2016). Prediction of Secondary Crash
+                            Frequency on Highway Networks. Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [PDF]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Haque, K*., Mishra, S., Paleti, R., Gkolias, M., and Sarker A. (2016). Truck Parking
+                            Utilization Analysis Using Truck GPS data. Compendium of Papers in 95th Annual Board Meeting
+                            of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dulebenets, M*., Pujats, K*., Gkolias, M., and Mishra, S. (2016). Robust Liner Shipping
+                            Scheduling: A Game Theoretic Approach. Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Osman, M*., Paleti, R., Mishra, S., and Gkolias, M. (2016). Analysis of Injury Severity of
+                            Large Truck Crashes in Work Zones. Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dulebenets, M*., Sarker, A*., Pujats, K*., Gkolias, M., and Mishra, S. (2016). Road Network
+                            Reliability: A Critical Literature Review. Compendium of Papers in 95th Annual Board Meeting
+                            of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dulebenets, M*., Pujats, K*., Gkolias, M., and Mishra, S (2016). Megaships in Marine
+                            Transportation: Critical Literature Review and Extensions. Compendium of Papers in 95th
+                            Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Kumar, A., and Mishra, S. (2016). Incorporating Sequencing of Transportation Projects in
+                            Network Design Problems.Compendium of Papers in 95th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p> Tang, L., Gharder, S., Zhang, L., and Mishra, S. (2015). Incorporating observed travel time
+                            reliability into a commuters&rsquo; departure time choice model. To appear in conference
+                            proceedings of 6th International Symposium on Transportation Network Reliability -The Value
+                            of Reliability, Robustness and Resilience, August 2-3, Nara, Japan. </p>
+                    </li>
+                    <li>
+                        <p> Mishra, S., Kumar, S., Golias, M.M., Welch, T., Taghizad, H., and Haque, K. (2015).
+                            Transportation Investment Decision Making for Medium to Large Transportation Networks. Third
+                            conference of Transportation Research Group of India. Kolkata, Dec. 2015 </p>
+                    </li>
+                    <li>
+                        <p>
+                            Welch, T., Mishra, S., and Wang, F. (2015). Interrelationship Between Airport Enplanements
+                            and Accessibility: Case of Three Airports in Metropolitan Washington, D.C., Region.
+                            Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Tang, L., Ghader, S., Mishra, S., and Zhang, L. (2015). Impact of Travel Reliability on Mode
+                            Choice: Empirical Analysis with Observed Travel Time Variation Data in Washington, DC.
+                            Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Cui, Y., Mishra, S., and Welch, T. (2015). Estimating Land Use Effects on Bicycle Ridership.
+                            Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2015_TRB_LU_15_5542.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Maji, A., Mishra, S., Chittor, R., and Tiwari, A. (2015). Optimization based Prioritization
+                            Model for Highway Safety Countermeasure Implementation Strategy. Compendium of Papers in
+                            94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a
+                                href="https://web.archive.org/web/20160306073138/http://www.ce.memphis.edu/smishra/Publications/TRB_15_5014_Final%20Paper_v2.pdf">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Sarker, A*., Mishra, S., Welch, T., Golias, M., and Torrens, P. (2015). Model Framework for
+                            Analyzing Public Transit Connectivity and Its Application in a Large-Scale Multimodal
+                            Transit Network. Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a
+                                href="https://web.archive.org/web/20160306073138/http://www.ce.memphis.edu/smishra/Publications/15_3279.pdf">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Sarker, A., Naimi, A., Mishra, S., Golias, M., and Freeze, B. (2015). Identification of
+                            Secondary Crashes in Large-Scale Highway Networks. Compendium of Papers in 94th Annual Board
+                            Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2015_TRB_SCIdentification_15_2363.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Flaskou, M*., Dulebenets, M., Golias, M., Mishra, S., and Rock, R. (2015). Analysis of
+                            Freight Corridors Using Truck GPS Data. Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2015_TRB_FPM_15-2244.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dulebenets, M*., Deligiannis, N., Golias, M., Dasgupta, D., and Mishra, S. (2015). Berth
+                            Allocation and Scheduling at Dedicated Marine Container Terminals with Excessive Demand.
+                            Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Dulebenets, M*., Golias, M., Mishra, S., and Konur, D. (2015). Improving Resilience of
+                            Marine Container Terminal Operations. Compendium of Papers in 94th Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Abdelnaby, A., Raji, F., Yohannes, A*., Naimi, A*., Mishra, S., and Golias, M. (2014).
+                            Impacts of the 1811-1812 earthquakes on existing transportation networks in Memphis area,
+                            Compendium of Papers in 10th U.S. National Earthquake Engineering, Anchorage, Alaska. [
+                            <a href="PDFs/Conference/2014 - Abdelnaby et al. -  IMPACTS OF THE 1811-1812 EARTHQUAKES ON EXISTING TRANSPORTATION NETWORKS IN MEMPHIS AREA.pdf"
+                                target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p> Mishra, S., and Sharma, S. (2014). Risk Measure Consideration in Transportation
+                            Infrastructure Investment Decision Making, to be presented (and Compendium of Papers in). in
+                            International Conference on Transportation Planning and Implementation Methodologies for
+                            Developing Countries, at Indian Institute of Technology (IIT) Bombay, Mumbai, India. [PDF]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Zhu, X., Mishra, S, and Welch, T. (2014). Modeling and Forecasting Household Workers by
+                            Occupation in Metropolitan Areas: Mesoscopic Framework. Compendium of Papers in 93rd Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_Occupation.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S (2014). Strategies for Maintaining State of Good Repair for Mixed Transit Fleet.
+                            Compendium of Papers in 93rd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_MixedFleetManagement.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S, Kang, M-W., and Jha, M. K. (2014). Trilevel Model with Environmental
+                            Considerations in Highway Alignment Optimization. Compendium of Papers in 93rd Annual Board
+                            Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_TriLevelEmission.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S, Khasnabis, S., and Swain, S. (2014). Multientity Perspective on Transportation
+                            Infrastructure Investment Decision Making. Compendium of Papers in 93rd Annual Board Meeting
+                            of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_MOO.pdf" target="new">PDF</a>
+                            <script type="text/javascript" src="Proceedings/2014_TRB_MOO.pdf"></script>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S, Welch, T., Torrens, P., Zhu, H., and Knaap, E. (2014). Locating the Most
+                            Connected Transit Stop, Route, and Transfer Center: Tool for Users and Decision Makers.
+                            Compendium of Papers in 93rd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_TransitConnectivityGUI.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Udenta, F. C., Jha, M. K., Mishra, S, and Maji, A. (2014). Disaster Management for Urban
+                            Commute in a Multimodal Transportation Context. Compendium of Papers in 92nd Annual Board
+                            Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Jha, M., Kang, M-W.,Mishra, S., Samanta, S., and Lyons, N. (2014). Urban Rail Transit
+                            Planning and Design: Discussion of Practical Issues and Analytical Modeling Techniques.
+                            Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Avin, U., Welch, T., Knaap, G., Ducca, F., Mishra, S, Cui, Y., and Erdogan, S. (2014). Even
+                            Smarter Growth? Land Use, Transportation, and Greenhouse Gas Emissions in Maryland.
+                            Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Sharma, S., Golias, M., and Boyles, S. (2014). Optimal Investment
+                            Decision-Making Strategies for Safety Improvements to Urban Intersections. Compendium of
+                            Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_SafetyAllocation.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Sharma, S., Golias, M., and Boyles, S. (2014). Economic Competitiveness and
+                            Equity-Based Safety Improvement Allocation Model for Urban Intersections. Compendium of
+                            Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2014_TRB_SafetyEquity.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Johnson, Z., Psarros, I., Golias, M., and Mishra, S. (2014). Developing Freight Performance
+                            Measures Using GPS Truck Data. Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Ding, C., Zhu, X., Mishra, S, and Xie, B. (2014). Impact of Regional Transit Service on
+                            Tour-Based Commuter Travel Mode Choice Using Bayesian Hierarchical Modeling. Compendium of
+                            Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Udenta, F. C., Jha, M. K., Mishra, S., and Maji, A. (2013). Strategies to Improve the
+                            Efficiency of a Multimodal Interdependent Transportation System in Disasters. 2nd Conference
+                            of Transportation Research Group of India (CTRG) , Agra, India.[
+                            <a href="PDFs/Conference/2013_CTRG_Disasters.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S (2013). A Synchronized Model for Crash Prediction and Resource Allocation to
+                            Prioritize Highway Safety Improvement Projects. 2nd Conference of Transportation Research
+                            Group of India (CTRG), Agra, India. [
+                            <a href="PDFs/Conference/2013_CTRG_Safety.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p> Johnson, Z., Psarros, I., Golias, M., and Mishra, S. (2013). Evaluating Commercial Motor
+                            Vehicles Hours-of-Service Rule. Proceedings of 5th METRANS International Urban Freight
+                            Conference, Long Beach, CA. </p>
+                    </li>
+                    <li>
+                        <p> Johnson, Z., Psarros, I., Golias, M., and Mishra, S (2013). Using Truck GPS Data in Freight
+                            Transportation Planning. Proceedings of 5th METRANS International Urban Freight Conference,
+                            Long Beach, CA. </p>
+                    </li>
+                    <li>
+                        <p> Johnson, Z., Psarros, I., Golias, M., and Mishra, S (2013). Using Truck GPS Data in Freight
+                            Transportation Planning. Proceedings of 5th METRANS International Urban Freight Conference,
+                            Long Beach, CA. </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Iseki, Y., and Moeckel, R. (2013). Multientity Perspective Freight Demand
+                            Modeling Technique: Varying Objectives and Outcomes. Compendium of Papers in 92nd Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_FreightPlayers.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Sharma, S., Mathew, T.V., and Khasnabis, S. (2013). Multiobjective Optimization
+                            Model for Transit Fleet Resource Allocation</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_FleetManagementMOO.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Sharma, S., Khasnabis, S., and Mathew, T.V. (2013). Preserving an Aging Transit
+                            Fleet: Optimal Resource Allocation Perspective Based on Service Life and Constrained
+                            Budget</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_NPC_FleetOptimization.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Welch, T., Moeckel, R., Mahapatra, S., and Tadayon, M. (2013). Development of
+                            Maryland Statewide Transportation Model and Its Application in Scenario Planning</span>
+                            .Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_MSTMPolicy_Scenario.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Wang, Y., Zhu, X., Moeckel, R., and Mahapatra, S. (2013). Comparison Between
+                            Gravity and Destination Choice Models for Trip Distribution in Maryland</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_DestinationChoice.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S., Welch, T., and Chakraborty, A. (2013). Experiment in Mega-Regional Road Pricing
+                            Using Advanced Commuter Behavior Analysis</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_MEGAREGION_PRICING.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Ducca, F., Weidner, T., Moeckel, R., and Mishra, S (2013). Exercising Mega-Region Analysis
+                            Framework in Chesapeake Bay Area</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_Megaregion.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Buddharaju, R., Jha, M. K., Kang, M. W., Mishra, S., and Markandeya, R. (2013). Predicting
+                            Road Accidents and Prioritizing Road Safety Improvement Measures in Developing Countries
+                            Using Adapted Traffic Conflict Techniques. Compendium of Papers in 92nd Annual Board Meeting
+                            of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_Safety_DevelopingCountries.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S, Welch, T., and Jha, M. K. (2013). Graph Theoretic Approach for Public Transit
+                            Connectivity in Multimodal Transportation Networks. Compendium of Papers in 92nd Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_TransitConnectivityPaper.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span
+                                id="ctl00_ContentPlaceHolder1_rgEventDetailPresentations_ctl00_ctl06_lblPresentationTitle">Maji,
+                                A., Mishra, S, and Jha, M.K. (2013). Critical Lane Volume (CLV)-based Capacity and Level
+                                of Service Analyses for Diverging Diamond Interchange</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_DDI.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Sharma, S., and Mishra, S (2013). Study of Effect on GHG Emissions by Addition of Transit
+                            Mode in Existing Road Network and Optimal Emission Pricing Models for Reducing Carbon
+                            Footprint. Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_RailEmission.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Welch, T., and Mishra, S (2013). Modeling Emission Policies Through Travel Demand
+                            Mechanisms: Analysis of the Best Reduction Strategies. Compendium of Papers in 92nd Annual
+                            Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [PDF]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Khasnabis, S., Mishra, S., and Swain, S. (2013). Calibration of Microsimulation Model With
+                            and Without Network Incidents. Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_IMS.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span
+                                id="ctl00_ContentPlaceHolder1_rgEventDetailPresentations_ctl00_ctl36_lblPresentationTitle">Mishra,
+                                S., and Zhu, X. (2013). Analyzing Effect of All-Red Intervals in Crash Reduction: Case
+                                Study of Heckman Correction for Urban Signalized Intersection Crashes</span>
+                            . Compendium of Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_AR.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Zhu, X., and Mishra, S (2013). Framework for Modeling and Forecasting Population Age
+                            Distribution in Metropolitan Areas at Level of Transportation Analysis Zone. Compendium of
+                            Papers in 92nd Annual Board Meeting of
+                            <em>Transportation Research Board</em>
+                            , National Research Council, Washington D.C. [
+                            <a href="PDFs/Conference/2013_TRB_PopulationEvolution.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mishra, S (2013). A Synchronized Model for Crash Prediction and Resource Allocation to
+                            Prioritize Highway Safety Improvement Projects. 2nd Conference of Transportation Research
+                            Group of India (CTRG), Agra, India. [
+                            <a href="PDFs/Conference/2013_CTRG_Safety.pdf" target="new">PDF</a>
+                            ]
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
